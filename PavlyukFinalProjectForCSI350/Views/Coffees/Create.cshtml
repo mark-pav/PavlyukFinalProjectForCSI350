@@ -1,10 +1,14 @@
 ﻿@model PavlyukFinalProjectForCSI350.Models.Coffee
 
+
 @{
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h4 class="notes">This is a Coffee Controller</h4>
+<h4 class="notes">It has 2 action methods that have the same name: Create</h4>
+<h5 class="notes">*First simply returns a view of the form for input (HttpGet)</h5>
+<h5 class="notes">*Second passes entered values into the database (HttpPost)</h5>
 
 <h4>Coffee</h4>
 <hr />
@@ -29,12 +33,9 @@
     </div>
 </div>
 
-
-
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a  class="btn btn-outline-primary" asp-action="Index">See The List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+<img  style="margin-top: 10px;" src="/pics/pic3.jpg" />
+    
